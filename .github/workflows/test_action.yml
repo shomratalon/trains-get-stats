@@ -2,7 +2,7 @@ name: Get task stats
 on: [issue_comment]
 
 jobs:
-  train-model:
+  get-stats:
       if: contains(github.event.comment.body, '/get-stats')
       runs-on: ubuntu-latest
       steps:
