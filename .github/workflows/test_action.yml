@@ -1,4 +1,4 @@
-name: Test train model
+name: Get task stats
 on: [issue_comment]
 
 jobs:
