@@ -1,0 +1,18 @@
+name: Test train model
+on: [issue_comment]
+
+jobs:
+  train-model:
+      if: contains(github.event.comment.body, '/get-stats')
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get task stats
+          uses: shomratalon/trains-get-stats@master
+          id: train
+          with:
+            TRAINS_API_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+            TRAINS_API_SECRET_KEY: ${{ secrets.SECRET_KEY }}
+            TRAINS_API_HOST: ${{ secrets.TRAINS_API_HOST }}
+            TASK_ID: "f458a609dc6145efaf634318e40c3a2e"
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
