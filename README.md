@@ -16,7 +16,7 @@ This will add an action to your workflow that will comment the `TASK_ID` last me
 
 Will work in both github issues and github pull requests comments.
 
-<img src="https://github.com/shomratalon/trains-train-model/blob/master/docs/get_stats_flow.png?raw=true" width="100%">
+<img src="https://github.com/shomratalon/trains-get-stats/blob/master/docs/get_stats_flow.png?raw=true" width="100%">
 
 ```yaml
 name: Get task stats
