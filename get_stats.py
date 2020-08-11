@@ -37,7 +37,8 @@ def get_task_stats(task_id):
                 return f"Results\n\n{table}\n\n" \
                        f"You can view full task results [here]({task.get_output_log_web_page()})"
             if task_status == "failed":
-                return f"No data for task FAILED task {task_id}, you can view full task results [here]({task.get_output_log_web_page()})"
+                return f"No data for task FAILED task {task_id}, " \
+                       f"you can view full task results [here]({task.get_output_log_web_page()})"
             else:
                 return f"No data yet... You can view full task results [here]({task.get_output_log_web_page()})"
         # Update the user about the task status, can not get any stats
