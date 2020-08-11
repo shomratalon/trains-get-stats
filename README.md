@@ -7,8 +7,16 @@
 
 Get your task results to your repo! 
 
+
+This action will help you retrieve all Trains task results and post to Github discussion (issue or pull request). 
+
 ## Usage
-### Example
+### Workflow Example
+This will add an action to your workflow that will comment the `TASK_ID` last metrics results to the current discussion. 
+
+Will work in both github issues and github pull requests comments.
+
+<img src="https://github.com/shomratalon/trains-train-model/blob/master/docs/get_stats_flow.png?raw=true" width="100%">
 
 ```yaml
 name: Get task stats
